@@ -38,7 +38,7 @@ import Menu from "@/components/MenuBar.vue"
 import Footer from "@/components/footer.vue"
 import About from "@/components/about.vue"
 import Marka from "@/components/marka.vue"
-import {ref} from "vue"
+import {onMounted, ref} from "vue"
 const images = ref([
     'https://sibirkoleso.ru/upload/iblock/ec8/batch_3.jpg',
     'https://sibirkoleso.ru/upload/iblock/f81/batch_2.jpg',
@@ -56,6 +56,9 @@ const aboutInfo = ref({
 const number = ref({
     num: 1,
     style: "xl:w-1/2 xl:h-1/2 md:w-1/2 md:h-1/2 xx:w-11/12 xx:h-11/12 block object-cover"
+})
+onMounted(() => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
 })
 </script>
 

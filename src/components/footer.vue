@@ -7,12 +7,19 @@
                     <li class="py-2 hover:text-orange-600 transition-all cursor-pointer">Диски</li>
                  </ul>
                  <ul class="footer_menu_list xx:border-y-0.1 xx:border-gray-700 xx:py-5 xl:py-0 md:py-0 xl:border-y-0 md:border-y-0">
-                    <li v-for="item in menuList" :key="item" class="py-2 xx:text-white xl:text-gray-400 md:text-gray-400 text-sm hover:text-orange-600 transition-all cursor-pointer">
+                    <li 
+                    v-for="item in menuList" :key="item" 
+                    class="py-2 xx:text-white xl:text-gray-400 md:text-gray-400 text-sm hover:text-orange-600 transition-all cursor-pointer"
+                    @click="Routers(item)">
                         {{item}}
                     </li>
                  </ul>
                  <ul class="footer_menu_list xx:border-y-0.1 xx:border-gray-700 xx:py-5 xl:py-0 md:py-0 xl:border-y-0 md:border-y-0">
-                    <li v-for="item in menuLists" :key="item" class="py-2 xx:text-white xl:text-gray-400 md:text-gray-400 text-sm hover:text-orange-600 transition-all cursor-pointer">
+                    <li 
+                    v-for="item in menuLists" 
+                    :key="item" class="py-2 xx:text-white xl:text-gray-400 md:text-gray-400 text-sm hover:text-orange-600 transition-all cursor-pointer"
+                    @click="Routers(item)"
+                    >
                         {{item}}
                     </li>
                  </ul>
@@ -43,8 +50,17 @@
 
 <script setup>
 import {ref} from "vue"
+import {useRouter} from "vue-router"
+const router = useRouter()
 const menuList = ref(['О компании','Франшиза','Контакты','Блог'])
 const menuLists = ref(['Кредит','Оплата','Доставка','Сервис'])
+const Routers = (name) => {
+    router.options.routes.forEach(item => {
+        if(item.name == name){
+            router.push(`${item.path}`)
+        }
+    })
+}
 </script>
 
 <style lang="scss" scoped>

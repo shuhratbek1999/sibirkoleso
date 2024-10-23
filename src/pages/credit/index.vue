@@ -32,7 +32,7 @@ import Menu from "@/components/MenuBar.vue"
 import Footer from "@/components/footer.vue"
 import About from "@/components/about.vue"
 import Credit from "@/components/credit.vue"
-import {ref} from "vue"
+import {ref,onMounted} from "vue"
 const number = ref({
     num: 1,
     style: "w-1/2 h-1/2 block object-cover"
@@ -118,7 +118,9 @@ const CreditList = ref([
         ]
     }
 ])
-
+onMounted(() => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
+})
 </script>
 
 <style scoped>

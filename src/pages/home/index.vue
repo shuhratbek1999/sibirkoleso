@@ -97,14 +97,12 @@ let number = ref({
 })
 const numberCom = computed(() => {
     if(window.innerWidth < 768){
-        console.log("salommm");
-        
         return number.value.num = 1
     }
 })
 watchEffect(() => {
     if(window.innerWidth){
-        console.log(window.innerWidth, "windoww");
+        console.log("windoww");
     }
 })
 </script>

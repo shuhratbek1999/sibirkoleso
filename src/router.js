@@ -10,6 +10,10 @@ import Credit from "./pages/credit/index.vue"
 import Uplata from "./pages/uplata/index.vue"
 import Delivery from "./pages/Dostavka/index.vue"
 import Services from "./pages/services/index.vue"
+import OrderTime from "./pages/orderTimeInfo/index.vue"
+import TovarInfo from "./pages/orderTimeInfo/tovarInfo.vue"
+import shinaInfo from "./pages/orderTimeInfo/shinaInfo.vue"
+import TovarCredit from "./pages/orderTimeInfo/tovarCredit.vue"
 
 const routerHistory = createWebHistory()
 
@@ -70,6 +74,31 @@ const router = createRouter({
       path: '/service',
       name: 'Сервис',
       component: Services
+    },
+    {
+      path: '/stocks',
+      children:[
+        {
+          path: 'vash-zakaz-v-udobnom-meste-i-lyuboe-vremya',
+          name: "ZakasTime",
+          component: OrderTime
+        },
+        {
+          path: 'tovary-dlya-avto',
+          name: "TovarAvto",
+          component: TovarInfo
+        },
+        {
+          path: 'shinomontazh-v-podarok',
+          name: "shinaMontaj",
+          component: shinaInfo
+        },
+        {
+          path: 'tovary-v-kredit',
+          name: "TovarCredit",
+          component: TovarCredit
+        }
+      ]
     }
   ]
 })

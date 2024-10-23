@@ -1,9 +1,9 @@
 <template>
     <v-container>
-       <div class="circle ">
+       <div class="circle">
           <div class="circles h-0.5 bg-black w-16 my-10">
           </div>
-          <h1 class="text-4xl font-sans font-medium">
+          <h1 class="text-4xl w-96 font-sans font-medium">
             {{props.aboutInfo.title}}
           </h1>
        </div>

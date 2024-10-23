@@ -1,5 +1,5 @@
 <template>
-    <div class="Contact">
+    <div class="tovarAvto">
        <div class="menu">
         <Menu/>
        </div>
@@ -12,21 +12,16 @@
              </template>
              <template v-slot:footers>
                  <div class="w-full xx:flex-col xl:flex-row md:flex-row flex">
-                     <div class="text-sm xl:w-1/2 h-10 cursor-pointer hover:first-line:text-red-700">
-                        <span class="mdi mdi-menu"></span>
-                        <span class="transition-all">Акции и события</span>
+                     <div class="text-sm menus xl:w-1/2 h-10 cursor-pointer">
+                        <span class="mr-2 mdi mdi-menu"></span>
+                        <span class="transition-all font-sans">Акции и события</span>
                      </div>
                      <div class="xl:w-1/2">
                          <div class="text font-sans text-gray-700 text-sm">
                             {{info.text}}
                          </div>
-                         <div class="video my-4">
-                             <video width="640" height="360" controls>
-                                <source :src="info.url" type="video/mp4">
-                            </video>
-                         </div>
-                         <div class="share">
-                            <span class="mdi mdi-share-variant-outline"></span>
+                         <div class="share mt-4">
+                            <span class="mr-2 mdi mdi-share-variant-outline"></span>
                             <span>{{info.share}}</span>
                          </div>
                      </div>
@@ -51,15 +46,20 @@ const number = ref({
 })
 const aboutInfo = ref({
    footer_text: "",
-   title: "Ваш заказ в удобном месте и любое время"
+   title: "Товары для авто"
 })
 const info = ref({
-    text: "Знакомьтесь с новой системой доставки заказов от TyreBox! Наша уникальная сеть постаматов предлагает удобство получения товаров в удобном для вас месте. Просто сделайте заказ на нашем сайте, выберите ближайший постамат и заберите покупку в любое время, которое вам удобно. TyreBox делает вашу жизнь проще и комфортнее!",
+    text: "Уважаемые покупатели,мы рады предложить вам: авто-товары, авто-масла и аккумуляторы.Традиционно низкие цены! Спрашивайте в магазинах сети «Сибирь-Колесо».",
     url: "https://www.youtube.com/watch?v=fqrNmQmcjd0",
     share: "Поделиться"
 })
 </script>
 
 <style scoped>
-
+.menus span{
+    transition: all 0.8s ease-in-out;
+}
+.menus:hover span {
+    color: red;
+}
 </style>
