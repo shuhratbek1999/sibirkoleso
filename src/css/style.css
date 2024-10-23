@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import url('../../public/fonts/style.css');
+@import url('../../public/bold/style.css');
+@import url('../../public/AtypDisplayMedium/style.css');
+@import url('../../public/AtypDisplayBold2/style.css');
+@import url('../../public/AtypText-Bold2/style.css');
+
+@import 'tailwindcss/utilities';
