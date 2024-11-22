@@ -33,7 +33,7 @@
              </template>
           </About>
        </div>
-       <div class="footer bg-zinc-900 h-89 flex flex-col justify-center">
+       <div class="footer bg-zinc-900 xl:h-89 md:h-89 flex flex-col justify-center">
            <Footer />
        </div>
     </div>

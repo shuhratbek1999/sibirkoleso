@@ -102,7 +102,7 @@ const oneShinaAbout = () => {
     splitText()
 }
 const linkBack = () => {
-    router.push('/home')
+    router.push('/')
     window.scrollTo({top: 0, behavior: 'smooth'})
 }
 onMounted(() => {

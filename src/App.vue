@@ -9,6 +9,7 @@
 *{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .v-container{
   padding: 0px 16px !important;

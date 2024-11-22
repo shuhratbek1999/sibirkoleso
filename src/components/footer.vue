@@ -1,5 +1,5 @@
 <template>
-    <v-container class="h-full flex flex-col justify-center">
+    <v-container class="h-auto flex flex-col justify-center">
        <div class="footer_top xx:flex-col xx:h-full xl:h-3/5 xl:flex-row md:flex-row md:h-3/5 flex items-center text-gray-400">
             <div class="footer_left xx:flex-col xx:w-11/12 xl:flex-row xl:w-3/5 md:w-3/5 md:flex-row flex w-3/5 justify-between">
                 <ul class="footer_left_item xx:text-white xl:text-gray-400 md:text-gray-400">

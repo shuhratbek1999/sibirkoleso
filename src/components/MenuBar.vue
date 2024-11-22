@@ -12,13 +12,13 @@
                   <div class="left_center xx:w-1/2 xx:justify-end xl:w-2/5 md:w-2/5 xl:pl-10 flex xl:justify-center md:justify-center">
                     <span class="cursor-pointer flex items-center" @click="showBox = !showBox">
                         <div v-if="showBox == false" class="menu mr-2">
-                            <div class="bit_1 w-6 h-0.3 bg-black my-1"></div>
-                            <div class="bit_1 w-6 h-0.3 bg-black my-1"></div>
-                            <div class="bit_1 w-6 h-0.3 bg-black my-1"></div>
+                            <div class="bit_1 w-4 h-0.3 bg-black my-1"></div>
+                            <div class="bit_1 w-4 h-0.3 bg-black my-1"></div>
+                            <div class="bit_1 w-4 h-0.3 bg-black my-1"></div>
                         </div>
                         <!-- <span  class="mdi mdi-menu mr-2"></span> -->
                         <span v-else class="mdi mdi-close mr-2 text-red-700 text-xl font-bold"></span>
-                        <span>Menu</span>
+                        <span>Меню</span>
                     </span>
                 </div>
                 <Sidebar class="xx:h-0" ref="sidebarRef" />
@@ -33,10 +33,10 @@
                         <span class="text-xl mdi mdi-map-marker mr-4"></span>
                         <span class="city_title xx:hidden xl:inline-block md:inline-block cursor-pointer">Москва</span>
                     </div>
-                    <div class="xl:w-1/3 md:w-1/3 xx:w-1/3 flex">
+                    <div class="xl:w-1/3 ml-5 md:w-1/3 xx:w-1/3 flex">
                         <div class="pay w-1/2 flex justify-center">
                             <span class="icon_person relative">
-                                 <img class="cursor-pointer w-5 relative top-1" @click="Korzinka()" src="https://sibirkoleso.ru/local/templates/sk/dist/images/header-cart.svg" alt="">
+                                 <img class="cursor-pointer w-4 relative top-2" @click="Korzinka()" src="https://sibirkoleso.ru/local/js/sibirkoleso/site/dist/images/header-cart-empty.svg" alt="">
                                 <span v-if="korzinkaNumber != 0" class="absolute left-0 top-5 bg-orange-500 text-white text-center w-5 h-5 rounded-full inline-block text-xs">
                                     {{korzinkaNumber}}
                                 </span>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="account xx:justify-end w-1/2 flex xl:justify-center md:justify-center">
                             <!-- <span class="text-xl inline-block icon_bag mdi mdi-account cursor-pointer"></span> -->
-                            <img class="cursor-pointer w-5" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9IiMxYTFhMWEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDcuMiA3LjciIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0zLjYgNC4zYy0xLjIgMC0yLjItMS0yLjItMi4yQzEuNCAxIDIuNCAwIDMuNiAwczIuMiAxIDIuMiAyLjJjMCAxLjItMSAyLjEtMi4yIDIuMXptMC0uNWMuOSAwIDEuNy0uOCAxLjctMS43UzQuNS41IDMuNi41cy0xLjcuNy0xLjcgMS43LjggMS42IDEuNyAxLjYiLz48cGF0aCBkPSJNLjUgNy40SDBjMC0yIDEuNi0zLjYgMy42LTMuNnMzLjYgMS42IDMuNiAzLjZoLS41YzAtMS43LTEuNC0zLjEtMy4xLTMuMVMuNSA1LjcuNSA3LjQiLz48L3N2Zz4=" alt="">
+                            <img class="cursor-pointer w-4" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9IiMxYTFhMWEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDcuMiA3LjciIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0zLjYgNC4zYy0xLjIgMC0yLjItMS0yLjItMi4yQzEuNCAxIDIuNCAwIDMuNiAwczIuMiAxIDIuMiAyLjJjMCAxLjItMSAyLjEtMi4yIDIuMXptMC0uNWMuOSAwIDEuNy0uOCAxLjctMS43UzQuNS41IDMuNi41cy0xLjcuNy0xLjcgMS43LjggMS42IDEuNyAxLjYiLz48cGF0aCBkPSJNLjUgNy40SDBjMC0yIDEuNi0zLjYgMy42LTMuNnMzLjYgMS42IDMuNiAzLjZoLS41YzAtMS43LTEuNC0zLjEtMy4xLTMuMVMuNSA1LjcuNSA3LjQiLz48L3N2Zz4=" alt="">
                         </div>
                     </div>
                 </div>
